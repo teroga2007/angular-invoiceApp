@@ -1,0 +1,22 @@
+<div class="total-box bg-light p-4 rounded-3 shadow-sm">
+  <div class="text-end">
+    <h6 class="text-muted mb-2">Subtotal:</h6>
+    <p class="mb-2 fw-semibold">
+      {{ currencySymbol }}{{ total | number: '1.2-2' }}
+    </p>
+
+    <ng-container *ngIf="applyTax">
+      <h6 class="text-muted mb-2">Tax (13%):</h6>
+      <p class="mb-2 fw-semibold">
+        {{ currencySymbol }}{{ tax | number: '1.2-2' }}
+      </p>
+    </ng-container>
+
+    <hr />
+
+    <h5 class="text-muted mb-1">Total</h5>
+    <h2 class="text-primary">
+      {{ currencySymbol }}{{ totalWithTax | number: '1.2-2' }}
+    </h2>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<form (ngSubmit)="onAddItem()" #itemForm="ngForm" class="bg-white shadow-sm mt-4 p-4 rounded-3 mb-4 border">
+
+  <h5 class="mb-4 text-primary">New Item</h5>
+
+  <div class="row g-3">
+    <!-- Descripción -->
+    <div class="col-md-6">
+      <label for="description" class="form-label">Description</label>
+      <input type="text" id="description" name="description" [(ngModel)]="newItem.description" class="form-control"
+        required />
+    </div>
+
+    <!-- Cantidad -->
+    <div class="col-md-3">
+      <label for="quantity" class="form-label">Quantity</label>
+      <input type="number" id="quantity" name="quantity" [(ngModel)]="newItem.quantity" class="form-control" min="1"
+        required />
+    </div>
+
+    <!-- Precio -->
+    <div class="col-md-3">
+      <label for="price" class="form-label">Price</label>
+      <input type="number" id="price" name="price" [(ngModel)]="newItem.price" class="form-control" min="0" step="0.01"
+        required />
+    </div>
+  </div>
+
+  <div class="mt-4 d-flex justify-content-end">
+    <button type="submit" class="btn btn-primary" [disabled]="!itemForm.form.valid">
+      Add Item
+    </button>
+  </div>
+</form>

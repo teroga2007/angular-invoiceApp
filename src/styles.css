@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bs-primary: #5332C4;
+  --bs-primary-hover: #4229a0;
+  --bs-primary-active: #341f82;
+  --bs-primary-light: #7d5ae2;
+}
+
+/* Botón primario */
+.btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.25rem rgba(83, 50, 196, 0.5);
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: var(--bs-primary-active);
+  border-color: var(--bs-primary-active);
+}
+
+/* Botón outline primario */
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.25rem rgba(83, 50, 196, 0.5);
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary.active {
+  color: #fff;
+  background-color: var(--bs-primary-active);
+  border-color: var(--bs-primary-active);
+}
+
+/* Texto primario */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+/* Fondo primario */
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+  color: #fff;
+}
+
+/* Bordes primarios */
+.border-primary {
+  border-color: var(--bs-primary) !important;
+}

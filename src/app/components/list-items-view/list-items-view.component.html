@@ -1,0 +1,29 @@
+@if (items.length > 0) {
+<div class="table-responsive">
+  <h4 class="text-primary mb-3">Invoice Detail</h4>
+  <table class="table table-bordered align-middle">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Description</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of items; track $index) {
+      <tr row-item-view [item]="item" (removeEventEmitter)="onRemove($event)"> </tr>
+      }
+    </tbody>
+  </table>
+</div>
+}
+@else{
+<div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">No Items Found</h4>
+  <p>There are no items in this invoice.</p>
+  <hr>
+  <p class="mb-0">Please add items to the invoice to proceed.</p>
+</div>
+}

@@ -1,0 +1,26 @@
+<nav-bar [invoice]="invoice" />
+
+<div class="container py-5">
+  <div class="card shadow-sm border-0">
+    <invoice-view [id]="invoice.id" [date]="invoice.date" />
+
+    <div class="card-body">
+      <div class="row justify-content-between mb-4">
+        <!-- Customer Info -->
+        <customer-view class="col-md-6" [customer]="invoice.customer" />
+
+        <!-- Company Info -->
+        <company-view class="col-md-6" [company]="invoice.company" />
+      </div>
+      <!-- Invoice Items -->
+      <list-items-view [items]="invoice.items" (removeEventEmitter)="onRemoveItem($event)" />
+      <!-- Invoice Totals -->
+      <div class="mt-4 d-flex justify-content-end">
+        <total [total]="invoice.total" [applyTax]="invoice.applyTax" [currency]="invoice.currency" />
+      </div>
+
+      <new-item (addItemEventEmitter)="addItem($event)" />
+
+    </div>
+  </div>
+</div>
