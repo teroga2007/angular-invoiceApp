@@ -17,8 +17,8 @@ const invoiceData: Invoice = {
   },
   company: {
     id: 201,
-    email: 'sterogam@gmail.com',
-    name: 'S-Digital 😸',
+    email: 'info@sdigital.com',
+    name: 'S-Digital',
   },
   items: [
     {
