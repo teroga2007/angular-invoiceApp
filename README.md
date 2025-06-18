@@ -1,59 +1,81 @@
-# AngularInvoiceApp
+# Angular Invoice Creator
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Welcome to my first Angular project! This is a simple and modern invoice creation app built using **Angular** and styled with **Bootstrap 5.3**. The app allows users to view, add, and remove invoice items directly from the UI. Currently, the data is hardcoded, but the structure is prepared for future integrations with a backend or API.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
+
+- 📄 Create and display invoices with itemized lists.
+- ➕ Add new items with description, quantity, and price.
+- 🗑️ Remove existing items from the invoice.
+- 💰 Support for tax calculation (13% optional).
+- 💵 Dynamic currency toggle: USD (`$`) or CRC (`₡`).
+- 🧾 Export clean and styled PDFs using **jsPDF** and **autoTable**.
+- 🎨 Responsive and modern design using **Bootstrap 5.3**.
+
+---
+
+## 📦 Tech Stack
+
+- **Angular** 18+ (or your current version)
+- **Bootstrap** 5.3
+- **jsPDF** + **jsPDF-autotable** (for PDF generation)
+- **TypeScript**
+- HTML / CSS
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/your-username/angular-invoice-creator.git
+cd angular-invoice-creator
+```
+
+### 2. Install Dependencies
+
+```
+npm install
+```
+
+### 3. Run the App
+
+```
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 4. Open Browser
 
-## Code scaffolding
+Navigate to [http://localhost:4200
+](http://localhost:4200)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+[
+](http://localhost:4200)
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Future Improvements
 
-```bash
-ng generate --help
-```
+- 🔗 Connect to a backend API for dynamic data storage.
+- 👤 Add authentication for multiple users or companies.
+- 📅 Add due dates, payment status, or recurring invoice options.
+- 🧩 Create reusable shared components and services.
 
-## Building
+---
 
-To build the project run:
+## 📃 License
 
-```bash
-ng build
-```
+This project is for personal learning and demonstration purposes.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Feel free to use and modify it for your own development and learning goals.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🙌 Acknowledgments
 
-```bash
-ng test
-```
+This app is part of my Angular learning journey. Built from scratch to understand components, data binding, and UI libraries.
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Thanks for checking it out!
